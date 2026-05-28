@@ -8,7 +8,7 @@ interface UserData {
 module.exports = {
   config: {
     name: "balance",
-    author: "Aljur Pogoy",
+    author: "Yan",
     nonPrefix: false,
     description: "Check your wallet and bank balance.",
   },
@@ -36,7 +36,7 @@ module.exports = {
         headerStyle: 'bold',
         bodyText: 'An error occurred while retrieving your balance.',
         bodyStyle: 'sansSerif',
-        footerText: 'Developed by: Aljur Pogoy',
+        footerText: 'Developed by: Yan',
       });
       api.sendMessage(errorMessage, threadID, messageID);
     }
