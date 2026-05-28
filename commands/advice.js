@@ -4,7 +4,7 @@ const AuroraBetaStyler = require(path.join(__dirname, "..", "core", "plugins", "
 module.exports = {
   name: "advice",
   description: "Get random advice from the Rapido API",
-  author: "Aljur Pogoy",
+  author: "Yan cotie",
   role: 0,
   async run({ api, event, args }) {
     const { threadID, messageID } = event;
@@ -14,7 +14,7 @@ module.exports = {
       headerStyle: "bold",
       bodyText: body,
       bodyStyle: "bold",
-      footerText: "Developed by: **Aljur Pogoy**"
+      footerText: "Developed by: **Yan cotie**"
     });
     try {
       const response = await axios.get("https://rapido.zetsu.xyz/api/advice");
