@@ -3,7 +3,7 @@ module.exports.config = {
   name: "sendnoti",
 
   version: "4.0.0",
-   author: "Aljur pogoy",
+   author: "Yan",
 
   description: "Sends a message to all groups and can only be done by the admin.",
 
