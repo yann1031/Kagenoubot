@@ -6,7 +6,7 @@ import path from "path";
 const prefixCommand: ShadowBot.Command = {
   config: {
     name: "prefix",
-    author: "Aljur Pogoy",
+    author: "Yan",
     nonPrefix: true,
     description: "Shows the bot's current prefix attach",
     cooldown: 5,
@@ -24,7 +24,7 @@ const prefixCommand: ShadowBot.Command = {
           headerStyle: "italic",
           bodyText: "ERROR.",
           bodyStyle: "sansSerif",
-          footerText: "Developed by: **Aljur Pogoy**",
+          footerText: "Developed by: **Yan**",
         });
         return api.sendMessage(errorMessage, threadID, messageID);
       }
@@ -35,7 +35,7 @@ const prefixCommand: ShadowBot.Command = {
         headerStyle: "italic",
         bodyText: `Global Prefix: ${prefix}`,
         bodyStyle: "sansSerif",
-        footerText: "Develope by **Aljur Pogoy**",
+        footerText: "Develope by **Yan**",
       });
 
       await api.sendMessage(
