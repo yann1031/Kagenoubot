@@ -5,7 +5,7 @@ import AuroraBetaStyler from '@aurora/styler';
 
 module.exports = {
   config: {
-    name: "owner",
+    name: "yan",
     description: "Displays Owner Info.",
     role: 0,
     usage: "/info",
@@ -69,7 +69,7 @@ module.exports = {
       headerStyle: 'bold',
       bodyText: 'Here is the Owner Information:',
       bodyStyle: 'sansSerif',
-      footerText: 'Developed by: Aljur Pogoy',
+      footerText: 'Developed by: Yan',
     });
 
     api.sendMessage(
