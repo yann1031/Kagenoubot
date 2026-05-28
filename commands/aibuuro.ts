@@ -11,7 +11,7 @@ const aibuuroCommand = {
     aliases: [],
     category: 'media',
     role: 4,
-    author: 'Aljur Pogoy',
+    author: 'Yan',
   },
   async run({ api, event, args }) {
     try {
@@ -38,7 +38,7 @@ const aibuuroCommand = {
             headerStyle: 'bold',
             bodyText: 'Warning: This content is NSFW. Viewer discretion advised.',
             bodyStyle: 'sansSerif',
-            footerText: 'Developed by: **Aljur Pogoy**',
+            footerText: 'Developed by: **Yan**',
           }),
           attachment: imageStream,
         },
@@ -61,7 +61,7 @@ const aibuuroCommand = {
             headerStyle: 'bold',
             bodyText: 'Failed to fetch Aibuuro image. Please try again later.',
             bodyStyle: 'sansSerif',
-            footerText: 'Developed by: **Aljur Pogoy**',
+            footerText: 'Developed by: **Yan**',
           }),
           event.threadID,
           event.messageID,
