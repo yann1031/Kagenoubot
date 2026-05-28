@@ -2,7 +2,7 @@ module.exports = {
 
   name: "balance",
 
-  author: "Aljur Pogoy",
+  author: "Yan",
 
   nonPrefix: false,
 
