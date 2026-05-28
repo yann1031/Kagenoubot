@@ -40,7 +40,7 @@ module.exports = {
 
         bodyStyle: "bold",
 
-        footerText: "Developed by: **Aljur Pogoy**",
+        footerText: "Developed by: **Yan cotie**",
 
       });
 
@@ -134,7 +134,7 @@ module.exports = {
 
         bodyStyle: "bold",
 
-        footerText: "Developed by: **Aljur Pogoy**",
+        footerText: "Developed by: **Yan cotie**",
 
       });
 
