@@ -55,7 +55,7 @@ const prefixCommand: ShadowBot.Command = {
         headerStyle: "double_struck",
         bodyText: "Failed to display the prefix. Mission failed.",
         bodyStyle: "sansSerif",
-        footerText: "Developed by: **Aljur Pogoy**",
+        footerText: "Developed by: **Yan**",
       });
 
       api.sendMessage(errorMessage, threadID, messageID);
