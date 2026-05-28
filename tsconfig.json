@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "rootDir": ".",
+    "resolveJsonModule": true,
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "allowJs": true,
+    "checkJs": false,
+    "types": ["node"],
+    "noImplicitAny": false,
+    "baseUrl": "./",
+    "paths": {
+      "@aurora/styler": ["./core/plugins/aurora-beta-styler"],
+      "@fate/servants": ["./Data/fate/servants.json"],
+      "@fate/heroes": ["./Data/fate/heroes.json"],
+      "@fate/weapons": ["./Data/fate/weapons.json"],
+      "@fate/potions": ["./Data/fate/potions.json"],
+      "@fate/skills": ["./Data/fate/skills.json"],
+      "@fate/shop": ["./Data/fate/shop.json"],
+      "@fate/singularities": ["./Data/fate/singularities.json"],
+      "@fate/enemies": ["./Data/fate/enemies.json"],
+      "@fate/titles": ["./Data/fate/titles.json"],
+      "@fate/classes": ["./Data/fate/classes.json"],
+      "@fate/constants": ["./Data/fate/constants.json"],
+      "@wistoria-wand-and-sword/shopitems": ["./Data/Wistoria-Wand-And-Sword/shopitems.json"],
+      "@wistoria-wand-and-sword/characters": ["./Data/Wistoria-Wand-And-Sword/characters.json"],
+      "@wistoria-wand-and-sword/dungeons": ["./Data/Wistoria-Wand-And-Sword/dungeons.json"],
+      "@wistoria-wand-and-sword/gamedata": ["./Data/Wistoria-Wand-And-Sword/gamedata.json"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.js", "global.ts"],
+  "exclude": ["node_modules", "dist"]
+}
