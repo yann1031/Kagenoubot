@@ -10,7 +10,7 @@ module.exports = {
 
   description: 'Donate money to another user.',
 
-  author: 'Aljur pogoy',
+  author: 'Yan',
 
   version: '3.0.0',
 
