@@ -10,7 +10,7 @@ module.exports = {
 
     name: "help",
 
-    author: "Aljur Pogoy",
+    author: "Yan",
 
     description: "Shows all Aurora commands with custom style",
 
