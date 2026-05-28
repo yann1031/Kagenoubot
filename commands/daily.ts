@@ -9,7 +9,7 @@ interface UserData {
 module.exports = {
   config: {
     name: "daily",
-    author: "Aljur Pogoy",
+    author: "Yan",
     description: "Claim your daily reward of 500 coins! (Once every 24 hours)",
     version: "3.0.0",
     usage: "<prefix>daily",
@@ -37,7 +37,7 @@ module.exports = {
           headerStyle: 'bold',
           bodyText: '❌ You already claimed your daily reward!\n⏰ Please wait ' + hours + 'h ' + minutes + 'm ' + seconds + 's to claim again.',
           bodyStyle: 'sansSerif',
-          footerText: 'Developed by: Aljur Pogoy',
+          footerText: 'Developed by: Yan',
         });
         return api.sendMessage(cooldownMessage, threadID, messageID);
       }
@@ -54,7 +54,7 @@ module.exports = {
         headerStyle: 'bold',
         bodyText: 'You claimed your daily reward!\n💰 Reward: ' + reward + ' coins\n✨ Bonus from ownirsV2 company you got ' + bonus + ' Congrats 🥀\n🏦 New Balance: ' + user.balance + ' coins\n\n⏰ Come back in 24 hours for your next reward!',
         bodyStyle: 'sansSerif',
-        footerText: 'Developed by: Aljur Pogoy',
+        footerText: 'Developed by: Yan',
       });
       await api.sendMessage(successMessage, threadID, messageID);
     } catch (error) {
@@ -65,7 +65,7 @@ module.exports = {
         headerStyle: 'bold',
         bodyText: '❌ An error occurred while processing your daily reward.',
         bodyStyle: 'sansSerif',
-        footerText: 'Developed by: Aljur Pogoy',
+        footerText: 'Developed by: Yan',
       });
       api.sendMessage(errorMessage, threadID, messageID);
     }
