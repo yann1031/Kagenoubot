@@ -24,7 +24,7 @@ const helpCommand: ShadowBot.Command = {
             headerStyle: "bold",
             bodyText: "Commands directory not found.",
             bodyStyle: "sansSerif",
-            footerText: "Developed by: **Aljur Pogoy**"
+            footerText: "Developed by: **Yan**"
           }),
           threadID,
           (err: any, info: any) => {
@@ -70,7 +70,7 @@ const helpCommand: ShadowBot.Command = {
             headerStyle: "bold",
             bodyText: "Error loading command list.",
             bodyStyle: "sansSerif",
-            footerText: "Developed by: **Aljur Pogoy**"
+            footerText: "Developed by: **Yan**"
           }),
           threadID,
           (err: any, info: any) => {
@@ -89,7 +89,7 @@ const helpCommand: ShadowBot.Command = {
         headerStyle: "bold",
         bodyText: body,
         bodyStyle: "sansSerif",
-        footerText: "Developed by: **Aljur Pogoy**"
+        footerText: "Developed by: **Yan**"
       });
 
     let sentMessageID: string;
@@ -152,7 +152,7 @@ const helpCommand: ShadowBot.Command = {
 Name: ${name || "N/A"}
 Category: ${command.config?.category || "N/A"}
 Description: ${command.config?.description || command.description || "No description available"}
-Author: ${command.config?.author || command.author || "Cid Kagenou"}
+Author: ${command.config?.author || command.author || "cohenautobot"}
 Version: ${command.config?.version || command.version || "1.0"}
 Usage: ${command.config?.usage || command.usage || `/${name}`}
         `.trim();
