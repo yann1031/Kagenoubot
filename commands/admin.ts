@@ -7,7 +7,7 @@ import * as path from "path";
 const adminCommand: ShadowBot.Command = {
   config: {
     name: "admin",
-    author: "Aljur pogoy",
+    author: "Yan",
     nonPrefix: false,
     description: "Manage admin list. Usage: #admin list | #admin add <uid> <role> | #admin remove <uid>",
   },
@@ -28,7 +28,7 @@ const adminCommand: ShadowBot.Command = {
         headerStyle: "bold",
         bodyText: "Only developers can use this command.",
         bodyStyle: "sansSerif",
-        footerText: "Developed by: **Aljur pogoy**",
+        footerText: "Developed by: **Yan**",
       });
       return api.sendMessage(errorMessage, threadID, messageID);
     }
@@ -42,7 +42,7 @@ const adminCommand: ShadowBot.Command = {
         headerStyle: "bold",
         bodyText: "Would you like to see the full list of admins, moderators, developers, and VIPs? React with 👍 to confirm or 👎 to cancel.",
         bodyStyle: "sansSerif",
-        footerText: "Developed by: **Aljur pogoy**",
+        footerText: "Developed by: **Yan**",
       });
 
       const messageInfo = await new Promise((resolve, reject) => {
@@ -112,7 +112,7 @@ ${vipNames}
               headerStyle: "bold",
               bodyText,
               bodyStyle: "sansSerif",
-              footerText: "Developed by: **Aljur pogoy**",
+              footerText: "Developed by: **Yan**",
             });
             await api.sendMessage(fullListMessage, threadID, messageID);
           } else if (reaction === "👎") {
@@ -122,7 +122,7 @@ ${vipNames}
               headerStyle: "bold",
               bodyText: "Action cancelled. No list displayed.",
               bodyStyle: "sansSerif",
-              footerText: "Developed by: **Aljur pogoy**",
+              footerText: "Developed by: **Yan**",
             });
             await api.sendMessage(cancelMessage, threadID, messageID);
           }
@@ -143,7 +143,7 @@ ${vipNames}
             headerStyle: "bold",
             bodyText: "Usage: #admin add <uid> <role> (or reply to a user)",
             bodyStyle: "sansSerif",
-            footerText: "Developed by: **Aljur pogoy**",
+            footerText: "Developed by: **Yan**",
           });
           return api.sendMessage(errorMessage, threadID, messageID);
         }
@@ -157,7 +157,7 @@ ${vipNames}
           headerStyle: "bold",
           bodyText: "Role must be 1 (admin), 2 (moderator), 3 (developer) or 4 (VIP).",
           bodyStyle: "sansSerif",
-          footerText: "Developed by: **Aljur pogoy**",
+          footerText: "Developed by: **Yan**",
         });
         return api.sendMessage(errorMessage, threadID, messageID);
       }
@@ -174,7 +174,7 @@ ${vipNames}
           headerStyle: "bold",
           bodyText: `UID ${uid} is already in the admin/VIP list.`,
           bodyStyle: "sansSerif",
-          footerText: "Developed by: **Aljur pogoy**",
+          footerText: "Developed by: **Yan**",
         });
         return api.sendMessage(errorMessage, threadID, messageID);
       }
@@ -199,7 +199,7 @@ ${vipNames}
           role === 4 ? "VIP" : role === 3 ? "Developer" : role === 2 ? "Moderator" : "Admin"
         } (role ${role}).`,
         bodyStyle: "sansSerif",
-        footerText: "Developed by: **Aljur pogoy**",
+        footerText: "Developed by: **Yan**",
       });
       return api.sendMessage(successMessage, threadID, messageID);
     }
@@ -211,7 +211,7 @@ ${vipNames}
           headerStyle: "bold",
           bodyText: "Usage: #admin remove <uid>",
           bodyStyle: "sansSerif",
-          footerText: "Developed by: **Aljur pogoy**",
+          footerText: "Developed by: **Yan**",
         });
         return api.sendMessage(errorMessage, threadID, messageID);
       }
@@ -228,7 +228,7 @@ ${vipNames}
           headerStyle: "bold",
           bodyText: `UID ${uid} is not in the admin/mod/vip/developer list.`,
           bodyStyle: "sansSerif",
-          footerText: "Developed by: **Aljur pogoy**",
+          footerText: "Developed by: **Yan**",
         });
         return api.sendMessage(errorMessage, threadID, messageID);
       }
@@ -251,7 +251,7 @@ ${vipNames}
         headerStyle: "bold",
         bodyText: `Removed ${name} (UID: ${uid}) from the admin/mod/vip/developer list.`,
         bodyStyle: "sansSerif",
-        footerText: "Developed by: **Aljur pogoy**",
+        footerText: "Developed by: **Yan**",
       });
       return api.sendMessage(successMessage, threadID, messageID);
     }
@@ -261,7 +261,7 @@ ${vipNames}
       headerStyle: "bold",
       bodyText: "Invalid subcommand. Use: admin list | add <uid> <role> | remove <uid>",
       bodyStyle: "sansSerif",
-      footerText: "Developed by: **Aljur pogoy**",
+      footerText: "Developed by: **Yan**",
     });
     api.sendMessage(errorMessage, threadID, messageID);
   },
