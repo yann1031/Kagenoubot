@@ -6,7 +6,7 @@ module.exports = {
 
   name: "bank",
 
-  author: "Aljur Pogoy",
+  author: "Yan",
 
   description: "Manage your bank account!",
 
