@@ -22,7 +22,7 @@ const aiCommand: ShadowBot.Command = {
           headerStyle: 'bold',
           bodyText: 'Please provide a message.',
           bodyStyle: 'sansSerif',
-          footerText: 'Developed by: **Aljur Pogoy**',
+          footerText: 'Developed by: **Yan cotie**',
         }),
         threadID,
         messageID
@@ -87,7 +87,7 @@ const aiCommand: ShadowBot.Command = {
                 headerStyle: 'bold',
                 bodyText: 'Failed to process your message.',
                 bodyStyle: 'sansSerif',
-                footerText: 'Developed by: **Aljur Pogoy**',
+                footerText: 'Developed by: **Yan cotie**',
               }),
               rThreadID,
               rMessageID
@@ -125,7 +125,7 @@ const aiCommand: ShadowBot.Command = {
           headerStyle: 'bold',
           bodyText: 'Failed to contact AI.',
           bodyStyle: 'sansSerif',
-          footerText: 'Developed by: **Aljur Pogoy**',
+          footerText: 'Developed by: **Yan cotie**',
         }),
         threadID,
         messageID
