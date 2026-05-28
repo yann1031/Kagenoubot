@@ -2,7 +2,7 @@ module.exports = {
 
   name: "unsend",
 
-  author: "aljurx",
+  author: "yan",
 
   nonPrefix: false,
 
