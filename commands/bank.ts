@@ -28,8 +28,7 @@ module.exports = {
           headerSymbol: '🏦',
           headerStyle: 'bold',
           bodyText: '❌ You need to register first!\nUsage: /bank register <name>\nExample: /bank register Aljur Pogoy',
-          bodyStyle: 'sansSerif',
-          footerText: 'Developed by: Aljur Pogoy',
+          bodyStyle: 'sansSerif, 
         });
         return api.sendMessage(errorMessage, threadID, messageID);
       }
@@ -41,7 +40,6 @@ module.exports = {
           headerStyle: 'bold',
           bodyText: '📝 Register - /bank register <name>\n💸 Withdraw - /bank withdraw <amount>\n💰 Deposit - /bank deposit <amount>\n🏦 Loan - /bank loan <amount>\n📜 Repay - /bank repay\n\n> Manage your coins with ease!',
           bodyStyle: 'sansSerif',
-          footerText: 'Developed by: Aljur Pogoy',
         });
         return api.sendMessage(menuMessage, threadID, messageID);
       }
@@ -55,7 +53,6 @@ module.exports = {
             headerStyle: 'bold',
             bodyText: '❌ Please provide your name!\nUsage: /bank register <name>\nExample: /bank register Aljur Pogoy',
             bodyStyle: 'sansSerif',
-            footerText: 'Developed by: Aljur Pogoy',
           });
           return api.sendMessage(errorMessage, threadID, messageID);
         }
@@ -66,7 +63,6 @@ module.exports = {
             headerStyle: 'bold',
             bodyText: '❌ You are already registered as ' + user.account + '!',
             bodyStyle: 'sansSerif',
-            footerText: 'Developed by: Aljur Pogoy',
           });
           return api.sendMessage(errorMessage, threadID, messageID);
         }
@@ -78,7 +74,6 @@ module.exports = {
           headerStyle: 'bold',
           bodyText: '✅ Successfully registered as ' + name + '!\n🏦 You can now use withdraw, deposit, and loan features.',
           bodyStyle: 'sansSerif',
-          footerText: 'Developed by: Aljur Pogoy',
         });
         return api.sendMessage(successMessage, threadID, messageID);
       }
@@ -90,8 +85,7 @@ module.exports = {
           headerSymbol: '🏦',
           headerStyle: 'bold',
           bodyText: '❌ Please provide a valid amount!\nExample: /bank ' + action + ' 100',
-          bodyStyle: 'sansSerif',
-          footerText: 'Developed by: Aljur Pogoy',
+          bodyStyle: 'ssansSerif', 
         });
         return api.sendMessage(errorMessage, threadID, messageID);
       }
@@ -103,8 +97,7 @@ module.exports = {
             headerSymbol: '💸',
             headerStyle: 'bold',
             bodyText: '❌ Insufficient funds in your bank!\nBank Balance: ' + user.bank + ' coins\nRequired: ' + amount + ' coins',
-            bodyStyle: 'sansSerif',
-            footerText: 'Developed by: Aljur Pogoy',
+            bodyStyle: 'sansSerif', 
           });
           return api.sendMessage(errorMessage, threadID, messageID);
         }
@@ -117,7 +110,6 @@ module.exports = {
           headerStyle: 'bold',
           bodyText: '✅ Successfully withdrew ' + amount + ' coins!\n🏦 Bank Balance: ' + user.bank + ' coins\n💰 Wallet Balance: ' + user.balance + ' coins',
           bodyStyle: 'sansSerif',
-          footerText: 'Developed by: Aljur Pogoy',
         });
         return api.sendMessage(successMessage, threadID, messageID);
       }
@@ -129,8 +121,7 @@ module.exports = {
             headerSymbol: '💰',
             headerStyle: 'bold',
             bodyText: '❌ Insufficient funds in your wallet!\nWallet Balance: ' + user.balance + ' coins\nRequired: ' + amount + ' coins',
-            bodyStyle: 'sansSerif',
-            footerText: 'Developed by: Aljur Pogoy',
+            bodyStyle: 'sansSerif', 
           });
           return api.sendMessage(errorMessage, threadID, messageID);
         }
@@ -142,8 +133,7 @@ module.exports = {
           headerSymbol: '💰',
           headerStyle: 'bold',
           bodyText: '✅ Successfully deposited ' + amount + ' coins!\n🏦 Bank Balance: ' + user.bank + ' coins\n💰 Wallet Balance: ' + user.balance + ' coins',
-          bodyStyle: 'sansSerif',
-          footerText: 'Developed by: Aljur Pogoy',
+          bodyStyle: 'sansSerif', 
         });
         return api.sendMessage(successMessage, threadID, messageID);
       }
@@ -159,7 +149,6 @@ module.exports = {
             headerStyle: 'bold',
             bodyText: '❌ You already have an outstanding loan!\nLoan Amount: ' + user.loan.amount + ' coins\nInterest: ' + user.loan.interest + ' coins\nTotal to Repay: ' + totalRepay + ' coins\n\nPlease repay your loan before taking a new one.',
             bodyStyle: 'sansSerif',
-            footerText: 'Developed by: Aljur Pogoy',
           });
           return api.sendMessage(errorMessage, threadID, messageID);
         }
@@ -170,7 +159,6 @@ module.exports = {
             headerStyle: 'bold',
             bodyText: '❌ Loan amount cannot exceed ' + maxLoan + ' coins!',
             bodyStyle: 'sansSerif',
-            footerText: 'Developed by: Aljur Pogoy',
           });
           return api.sendMessage(errorMessage, threadID, messageID);
         }
@@ -185,7 +173,6 @@ module.exports = {
           headerStyle: 'bold',
           bodyText: '✅ Successfully borrowed ' + amount + ' coins!\n💸 Interest (10%): ' + interest + ' coins\n📜 Total to Repay: ' + totalRepay + ' coins\n💰 Wallet Balance: ' + user.balance + ' coins\n\n⚠️ Repay your loan before taking a new one!',
           bodyStyle: 'sansSerif',
-          footerText: 'Developed by: Aljur Pogoy',
         });
         return api.sendMessage(successMessage, threadID, messageID);
       }
@@ -198,7 +185,6 @@ module.exports = {
             headerStyle: 'bold',
             bodyText: '❌ You have no outstanding loan to repay!',
             bodyStyle: 'sansSerif',
-            footerText: 'Developed by: Aljur Pogoy',
           });
           return api.sendMessage(errorMessage, threadID, messageID);
         }
@@ -210,7 +196,6 @@ module.exports = {
             headerStyle: 'bold',
             bodyText: '❌ Insufficient funds in your wallet!\nWallet Balance: ' + user.balance + ' coins\nRequired to Repay: ' + totalRepay + ' coins',
             bodyStyle: 'sansSerif',
-            footerText: 'Developed by: Aljur Pogoy',
           });
           return api.sendMessage(errorMessage, threadID, messageID);
         }
@@ -222,8 +207,7 @@ module.exports = {
           headerSymbol: '🏦',
           headerStyle: 'bold',
           bodyText: '✅ Successfully repaid your loan of ' + totalRepay + ' coins!\n💰 Wallet Balance: ' + user.balance + ' coins',
-          bodyStyle: 'sansSerif',
-          footerText: 'Developed by: Aljur Pogoy',
+          bodyStyle: 'sansSerif', 
         });
         return api.sendMessage(successMessage, threadID, messageID);
       }
@@ -235,7 +219,6 @@ module.exports = {
         headerStyle: 'bold',
         bodyText: '❌ An error occurred while processing your bank action.',
         bodyStyle: 'sansSerif',
-        footerText: 'Developed by: Aljur Pogoy',
       });
       api.sendMessage(errorMessage, threadID, messageID);
     }
