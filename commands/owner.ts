@@ -47,13 +47,13 @@ module.exports = {
 
     ctx.font = '22px Sans';
     ctx.fillStyle = '#00ffcc';
-    ctx.fillText('Developer: Aljur Pogoy', 30, 360);
+    ctx.fillText('Developer: Yan', 30, 360);
 
     ctx.fillStyle = '#ffcc00';
-    ctx.fillText('Moderators: Kenneth Panio, Liane Cagara', 30, 410);
+    ctx.fillText('Moderators: Chary, Kyzen', 30, 410);
 
     ctx.fillStyle = '#ff6600';
-    ctx.fillText('Admin: Aljur Pogoy', 30, 460);
+    ctx.fillText('Admin: Yan', 30, 460);
 
     ctx.fillStyle = '#cccccc';
     ctx.font = '16px Sans';
