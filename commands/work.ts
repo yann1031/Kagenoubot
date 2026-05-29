@@ -3,7 +3,7 @@ import AuroraBetaStyler from '@aurora/styler';
 module.exports = {
   config: {
     name: "work",
-    author: "Aljur Pogoy",
+    author: "Yan",
     description: "Earn coins by working! (Cooldown: 1 hour)",
     cooldown: 3600,
   },
@@ -25,7 +25,6 @@ module.exports = {
           headerStyle: 'bold',
           bodyText: `❌ You must wait ${remaining} minutes before working again!`,
           bodyStyle: 'sansSerif',
-          footerText: 'Developed by: Aljur Pogoy',
         });
         return api.sendMessage(cooldownMessage, threadID, messageID);
       }
@@ -40,7 +39,6 @@ module.exports = {
         headerStyle: 'bold',
         bodyText: `✅ You earned ${earnings} coins from work!\nBalance: ${user.balance} coins`,
         bodyStyle: 'sansSerif',
-        footerText: 'Developed by: Aljur Pogoy',
       });
       api.sendMessage(message, threadID, messageID);
     } catch (error) {
@@ -50,7 +48,6 @@ module.exports = {
         headerStyle: 'bold',
         bodyText: '❌ An error occurred while working.',
         bodyStyle: 'sansSerif',
-        footerText: 'Developed by: Aljur Pogoy',
       });
       api.sendMessage(errorMessage, threadID, messageID);
     }
